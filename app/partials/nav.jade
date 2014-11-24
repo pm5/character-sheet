@@ -9,5 +9,6 @@
     .content
       a.item(ng-href='/', ng-class="{active:activeTab == ''}") Home
       .right.floated.menu
+        a.item.index(ng-href="/", ng-class="{active:activeTab == 'index'}") 首頁
         a.item.about(ng-href="/about", ng-class="{active:activeTab == 'about'}") 關於
       a.ui.top.right.attached.label.build-id(href="http://github.com/clkao/angular-livescript-seed") {{ config_build }}

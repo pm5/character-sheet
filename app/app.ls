@@ -8,6 +8,10 @@ angular.module "App" <[app.templates ui.router]>
       url: '/about'
       templateUrl: 'app/partials/about.html'
       controller: "About"
+    .state 'index' do
+      url: '/'
+      templatesUrl: 'app/partials/index.html'
+      controller: "Index"
     # Catch all
   $urlRouterProvider
     .otherwise('/about')
@@ -34,4 +38,7 @@ angular.module "App" <[app.templates ui.router]>
       ''
 
 .controller About: <[$rootScope $http]> ++ ($rootScope, $http) ->
-    $rootScope.activeTab = 'about'
+  $rootScope.activeTab = 'about'
+
+.controller Index: <[$rootScope $scope]> ++ ($rootScope, s) ->
+  $rootScope.activeTab = 'index'
