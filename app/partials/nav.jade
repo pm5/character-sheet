@@ -1,14 +1,9 @@
-.ui.top.inverted.collapsible.menu
-  .container.hide-print
-    .header
-      a.left.floated.item.header.brand(href='/') Angular/LiveScript
-      .ui.mini.right.floated.button
-        i.list.icon
-      a.right.floated.item.branding(href='http://livescript.net', target='_blank')
-        img(src='http://livescript.net/images/icon.png')
-    .content
-      a.item(ng-href='/', ng-class="{active:activeTab == ''}") Home
-      .right.floated.menu
-        a.item.index(ng-href="/", ng-class="{active:activeTab == 'index'}") 首頁
-        a.item.about(ng-href="/about", ng-class="{active:activeTab == 'about'}") 關於
-      a.ui.top.right.attached.label.build-id(href="http://github.com/clkao/angular-livescript-seed") {{ config_build }}
+md-toolbar
+  .md-toolbar-tools
+    a(href='/') Angular/LiveScript
+    a(href='http://livescript.net', target='_blank')
+      img(src='http://livescript.net/images/icon.png')
+    span(flex)
+    a(ng-href='/', ng-class="{active:activeTab == ''}") Home
+    a(ng-href="/about", ng-class="{active:activeTab == 'about'}") 關於
+    a(href="http://github.com/clkao/angular-livescript-seed") {{ config_build }}
