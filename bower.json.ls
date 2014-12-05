@@ -1,5 +1,5 @@
 #!/usr/bin/env lsc -cj
-angular-version = '1.3.0-rc.4'
+angular-version = '1.3.x'
 
 name: "angular-livescript-seed"
 repo: "clkao/angular-livescript-seed"
