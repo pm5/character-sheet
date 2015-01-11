@@ -1,20 +1,5 @@
-angular-livescript-seed
-=======================
-
-Ultra-modern angular-livescript seed with:
-* LiveScript
-* gulp
-* bower
-* semantic-ui
-* stylus
-* angular-ui-router
-* protractor
-
-This resembles pretty much the [brunch](http://brunch.io) standard build process with gulp, with minor tweaks for angular:
-* vendor javascript files from bower and vendor/ directory are concatenated into vendor.js
-* js under app/ are concatenated into app.js
-* partial templates written in jade are turned into angular module as 'app.templates' and concatenated into app.templates.js
-* css files are concatenated into app.css
+TRPG Character Sheet
+====================
 
 # Usage
 
@@ -29,4 +14,4 @@ Start server:
 
 # License
 
-The MIT license: http://clkao.mit-license.org/
+The MIT license: http://pm5.mit-license.org/
